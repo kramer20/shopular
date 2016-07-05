@@ -20,7 +20,15 @@
             ];
 
             this.tax = .0575;
-      })
       
+
+      this.ShowTag = function(discount){
+        if (discount === 0)
+          return false;
+        else
+          return true;
+      }
+      
+      })
 
 })();
