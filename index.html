@@ -22,7 +22,7 @@
 	  <tbody>
 	    <tr ng-repeat='item in main.data'>
 	      <th class="trth" scope="row">{{item.name}}</th>
-	      <td> $ {{(item.price - item.discount) * main.tax + (item.price - item.discount)}}<img class="tag" src="images/sale.png" ng-show="main.ShowTag(item.discount)"></td>
+	      <td> $ {{((item.price - item.discount) * main.tax + (item.price - item.discount)).toFixed(2)}}<img class="tag" src="images/sale.png" ng-show="main.ShowTag(item.discount)"></td>
 	      <td>{{item.quantity}}</td>
 	      <td>{{item.color}}</td>
 	    </tr>
